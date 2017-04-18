@@ -1,0 +1,4 @@
+FROM ubuntu:trusty
+MAINTAINER DOCKERPRACTICE
+COPY Hi.txt  /Hi.txt
+CMD ["/bin/bash"]
