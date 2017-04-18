@@ -1,6 +1,7 @@
 FROM tomcat:7.0
 MAINTAINER dockerpractice
 ADD http://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/war-stable/2.46.1/jenkins.war /usr/local/tomcat/webapps/jenkins.war/
+ADD https://excellmedia.dl.sourceforge.net/project/openmrs/releases/OpenMRS_Platform_2.0.1/openmrs.war /usr/local/tomcat/webapps/openmrs.war/
 COPY sample.war /usr/local/tomcat/webapps/sample.war
 ENV CATALINA_HOME /usr/local/tomcat/
 ENV PATH $CATALINA_HOME/bin:$PATH
