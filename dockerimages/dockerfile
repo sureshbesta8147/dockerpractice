@@ -1,0 +1,6 @@
+FROM ubuntu:trusty
+MAINTAINER docker
+RUN apt-get update
+ENTRYPOINT ["ECHO"]
+CMD ["HELLO"]
+
